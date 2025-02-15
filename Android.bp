@@ -12,7 +12,7 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "audio.primary.kona.so",
+	name: "audio.primary.kona",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -1949,23 +1949,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libSNPE",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libSNPE.so"],
-			shared_libs: ["libdl", "liblog", "libc++_shared", "libc", "libm", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libMegviiFacepp-0.5.2",
 	owner: "xiaomi",
 	strip: {
@@ -1983,16 +1966,15 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmegface_vendor",
-	stem: "libmegface",
+	name: "libSNPE",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmegface.so"],
-			shared_libs: ["libm", "liblog", "libdl", "libc", ],
+			srcs: ["proprietary/vendor/lib64/libSNPE.so"],
+			shared_libs: ["libdl", "liblog", "libc++_shared", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
@@ -2950,6 +2932,24 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libipebpsstriping.so"],
 			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "libcdsprpc", "libqdMetaData", "libhardware", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libmegface_vendor",
+	stem: "libmegface",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libmegface.so"],
+			shared_libs: ["libm", "liblog", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",

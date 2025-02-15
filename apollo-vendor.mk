@@ -317,6 +317,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     libHalSuperSensorServer \
     libMIAIHDRhvx_interface \
+    libMegviiFacepp-0.5.2 \
     libSNPE \
     libSuperSensor \
     libSuperSensorCPU \
@@ -373,9 +374,8 @@ PRODUCT_PACKAGES += \
     libflaw \
     libfocus \
     libft2vendor \
-    libmegface \
-    libMegviiFacepp-0.5.2 \
     libipebpsstriping \
+    libmegface_vendor \
     libmialgo_ie_capture \
     libmialgo_ie_preview \
     libmialgo_image_colourkeeping \

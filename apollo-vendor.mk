@@ -208,8 +208,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/apollo/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    audio.primary.apollo \
-    liba2dpoffload_apollo \
+    audio.primary.kona \
+    liba2dpoffload \
     libaudio_log_utils \
     libaudioroute_ext \
     libresampler \

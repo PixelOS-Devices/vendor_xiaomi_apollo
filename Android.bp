@@ -21,7 +21,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.apollon.so",
+                "proprietary/vendor/lib/hw/audio.primary.apollo.so",
             ],
             shared_libs: [
                 "libbase",
@@ -63,7 +63,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/liba2dpoffload_apollon.so",
+                "proprietary/vendor/lib/liba2dpoffload_apollo.so",
             ],
             shared_libs: [
                 "libaudioutils",

@@ -13,7 +13,7 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.apollon",
+    name: "audio.primary.apollo",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -55,7 +55,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "liba2dpoffload_apollon",
+    name: "liba2dpoffload_apollo",
     owner: "xiaomi",
     strip: {
         none: true,
